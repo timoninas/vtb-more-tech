@@ -52,6 +52,39 @@ class CameraViewController: UIViewController {
         takePicture()
     }
     
+    @IBAction func choosePhotoFromLibraryButton(_ sender: UIButton) {
+//        let cameraIcon = #imageLiteral(resourceName: "camera")
+//        let libraryIcon = #imageLiteral(resourceName: "image")
+        
+        let alert = UIAlertController(title: nil,
+                                      message: nil,
+                                      preferredStyle: .actionSheet)
+        
+        let action1 = UIAlertAction(title: "Camera", style: .default) { _ in
+            //TODO Camera action
+            self.chooseImagePicker(source: .camera)
+        }
+        
+//        action1.setValue(cameraIcon, forKey: "image")
+        action1.setValue(CATextLayerAlignmentMode.left, forKey: "TitleTextAlignment")
+        
+        let action2 = UIAlertAction(title: "Library", style: .default) { _ in
+            //TODO Library action
+            self.chooseImagePicker(source: .photoLibrary)
+        }
+//        action2.setValue(libraryIcon, forKey: "image")
+        action2.setValue(CATextLayerAlignmentMode.left, forKey: "TitleTextAlignment")
+        
+        let action3 = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        alert.addAction(action1)
+        alert.addAction(action2)
+        alert.addAction(action3)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
     func setupLayout() {
         setupNavBar()
     }
@@ -89,5 +122,26 @@ extension CameraViewController: AVCapturePhotoCaptureDelegate {
                 }
             }
         }
+    }
+}
+
+extension CameraViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func chooseImagePicker(source: UIImagePickerController.SourceType) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(source) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.allowsEditing = true
+            imagePicker.sourceType = source
+            imagePicker.delegate = self
+            
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        let image = (info[.editedImage] as! UIImage)
+        navigationController?.pushViewController(ModuleBuilder.createCameraModule(image: image), animated: true)
+        dismiss(animated: true, completion: nil)
     }
 }
