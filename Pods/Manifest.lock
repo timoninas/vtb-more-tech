@@ -1,0 +1,20 @@
+PODS:
+  - GravitySliderFlowLayout (1.0)
+  - ViewAnimator (3.0.1)
+
+DEPENDENCIES:
+  - GravitySliderFlowLayout
+  - ViewAnimator
+
+SPEC REPOS:
+  trunk:
+    - GravitySliderFlowLayout
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  GravitySliderFlowLayout: bb9ae6a302b85821c9e0271c00533fae8091143b
+  ViewAnimator: dd18d2f5c1e472f78d0065ff92750fe56cbd2f39
+
+PODFILE CHECKSUM: 61bf05f910326bc6d1d8045f68c6bfd631b42d6f
+
+COCOAPODS: 1.8.4
