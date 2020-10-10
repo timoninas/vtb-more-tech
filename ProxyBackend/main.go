@@ -12,12 +12,13 @@ import (
 const (
 	vtbApiKey    = "28a5288c315b4bee1552fb20503e4cd2"
 	vtbBaseUrl   = "https://gw.hackathon.vtb.ru/vtb/hackathon"
-	flaskBaseUrl = "http://127.0.0.1:5000"
+	flaskBaseUrl = "http://84.201.167.60:8080"
 	apiPath      = "/api"
 )
 
 var apis = []Api{
 	NewVtbApi(vtbApiKey, vtbBaseUrl),
+	NewFlaskApi(flaskBaseUrl),
 }
 
 func apiCarLoanHandler(ctx *fiber.Ctx) error {

@@ -6,7 +6,6 @@ import (
 	"sync"
 	"time"
 
-	"github.com/levigross/grequests"
 	"go.uber.org/zap"
 )
 
@@ -26,65 +25,26 @@ func NewVtbApi(key string, url string) *VtbApi {
 
 func (api *VtbApi) lock() {
 	api.Mutex.Lock()
-	zap.S().Debug("Api locked")
+	zap.S().Debug("VtbApi locked")
 }
 
 func (api *VtbApi) unlock() {
 	go func() {
 		time.Sleep(time.Second)
 		api.Mutex.Unlock()
-		zap.S().Debug("Api unlocked")
+		zap.S().Debug("VtbApi unlocked")
 	}()
 }
 
-func (api *VtbApi) headers() map[string]string {
+func (api VtbApi) getUrl(endpoint string) string {
+	return api.BaseUrl + endpoint
+}
+
+func (api VtbApi) headers() map[string]string {
 	return map[string]string{
-		"x-ibm-client-id": "28a5288c315b4bee1552fb20503e4cd2",
+		"x-ibm-client-id": api.ApiKey,
 		"content-type":    "application/json",
 		"accept":          "application/json"}
-}
-
-func (api *VtbApi) generalPost(apiPath string, body Unknown) (Unknown, error) {
-	api.lock()
-	defer api.unlock()
-	url := api.BaseUrl + apiPath
-	zap.S().Debugf("POST: %v", url)
-	resp, err := grequests.Post(url,
-		&grequests.RequestOptions{
-			Headers:     api.headers(),
-			RequestBody: body.Reader(),
-		},
-	)
-	if err != nil {
-		zap.S().Debugf("Api error: %v", err)
-		return Unknown{}, err
-	}
-	zap.S().Debugf("Api success: %v", resp)
-	if resp.StatusCode != 200 {
-		return Unknown{}, fmt.Errorf("Api returned %d status: %v", resp.StatusCode, resp.Bytes())
-	}
-	return resp.Bytes(), nil
-}
-
-func (api *VtbApi) generalGet(apiPath string, params map[string]string) (Unknown, error) {
-	api.lock()
-	defer api.unlock()
-	url := api.BaseUrl + apiPath
-	resp, err := grequests.Get(url,
-		&grequests.RequestOptions{
-			Params:  params,
-			Headers: api.headers(),
-		},
-	)
-	if err != nil {
-		zap.S().Debugf("Api error: %v", err)
-		return Unknown{}, err
-	}
-	zap.S().Debugf("Api success: %d", resp.StatusCode)
-	if resp.StatusCode != 200 {
-		return Unknown{}, fmt.Errorf("Api returned %d status: %v", resp.StatusCode, resp.Bytes())
-	}
-	return resp.Bytes(), nil
 }
 
 func (api *VtbApi) CarRecognize(image CarImage) (CarResponse, error) {
@@ -92,7 +52,7 @@ func (api *VtbApi) CarRecognize(image CarImage) (CarResponse, error) {
 	if err != nil {
 		return CarResponse{}, err
 	}
-	body, err = api.generalPost(apiCarRecognizePath, body)
+	body, err = generalPost(api, apiCarRecognizePath, body)
 	carresp := CarResponse{}
 	err = json.Unmarshal(body, &carresp)
 	if err != nil {
@@ -102,7 +62,7 @@ func (api *VtbApi) CarRecognize(image CarImage) (CarResponse, error) {
 }
 
 func (api *VtbApi) Marketplace() (Marketplace, error) {
-	body, err := api.generalGet(apiMarketplacePath, map[string]string{})
+	body, err := generalGet(api, apiMarketplacePath, map[string]string{})
 	if err != nil {
 		return Marketplace{}, fmt.Errorf("Get %v", err)
 	}
@@ -115,18 +75,18 @@ func (api *VtbApi) Marketplace() (Marketplace, error) {
 }
 
 func (api *VtbApi) CarLoan(body Unknown) (Unknown, error) {
-	return api.generalPost(apiCarLoanPath, body)
+	return generalPost(api, apiCarLoanPath, body)
 }
 
 func (api *VtbApi) Calculate(body Unknown) (Unknown, error) {
-	return api.generalPost(apiCalculatePath, body)
+	return generalPost(api, apiCalculatePath, body)
 }
 
 func (api *VtbApi) PaymentsGraph(body Unknown) (Unknown, error) {
-	return api.generalPost(apiPaymentGraphPath, body)
+	return generalPost(api, apiPaymentGraphPath, body)
 }
 
 func (api *VtbApi) Settings(name string, language string) (Unknown, error) {
 	params := map[string]string{"name": name, "language": language}
-	return api.generalGet(apiSettingsPath, params)
+	return generalGet(api, apiSettingsPath, params)
 }
