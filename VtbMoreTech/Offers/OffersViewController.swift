@@ -32,8 +32,8 @@ class OffersViewController: UIViewController {
     let cellsShadowColor = UIColor(named: "2a002a")?.cgColor
     let productCellIdentifier = "ProductCollectionViewCell"
     
-    var carBrand: String! = "Cadillac"
-    var carModel: String! = "ESCALADE"
+    var carBrand: String! = ""
+    var carModel: String! = ""
     var car: CarModel!
     
     private var itemsNumber = 1000
@@ -53,14 +53,13 @@ class OffersViewController: UIViewController {
             self.productSubtitleLabel.text = "Цена автомобиля указана в базовой комплектации"
             
             
-            self.titleLabel.numberOfLines = 2
             self.titleLabel.lineBreakMode = .byWordWrapping
-//            self.titleLabel.
             self.productTitleLabel.text = car.price + " ₽"
             self.productTitleLabel.font = UIFont.systemFont(ofSize: 25)
         } else {
             self.titleLabel.text = "Автомобиль не найдено"
         }
+        self.titleLabel.numberOfLines = 2
         
         configureCollectionView()
         configurePriceButton()

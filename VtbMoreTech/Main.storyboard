@@ -81,7 +81,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBN-he-sFQ">
-                                <rect key="frame" x="20" y="616.33333333333337" width="335" height="45.666666666666629"/>
+                                <rect key="frame" x="20" y="616.33333333333337" width="335" height="60.666666666666629"/>
                                 <string key="text">For most people, buying a new computer does not have to be as stressful as 
 buying a new car. 
 </string>
@@ -90,7 +90,7 @@ buying a new car.
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evu-fF-RbW">
-                                <rect key="frame" x="57.666666666666657" y="682" width="260" height="46"/>
+                                <rect key="frame" x="57.666666666666657" y="697" width="260" height="46"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="DVo-GF-NPK"/>
@@ -103,7 +103,7 @@ buying a new car.
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_image" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-6L-ROj">
-                                <rect key="frame" x="70.666666666666671" y="695" width="20" height="20"/>
+                                <rect key="frame" x="70.666666666666671" y="710" width="20" height="20"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-qN-Wrt">
                                 <rect key="frame" x="168" y="519.33333333333337" width="39" height="30"/>
@@ -132,7 +132,7 @@ buying a new car.
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CBN-he-sFQ" secondAttribute="trailing" constant="20" id="drL-PW-9J1"/>
                             <constraint firstItem="CBN-he-sFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eJg-b4-nCW"/>
                             <constraint firstItem="evu-fF-RbW" firstAttribute="leading" secondItem="z4d-6L-ROj" secondAttribute="trailing" constant="-33" id="iFD-Zz-IjI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evu-fF-RbW" secondAttribute="bottom" constant="50" id="khq-6m-IsT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evu-fF-RbW" secondAttribute="bottom" constant="35" id="khq-6m-IsT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HX0-Kr-3WV" secondAttribute="trailing" id="lNp-01-hEb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B1N-8j-3l0" secondAttribute="trailing" id="uRU-pU-AHe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LgE-7I-9x7" secondAttribute="trailing" constant="45" id="ud7-1a-Qjx"/>

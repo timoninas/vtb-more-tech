@@ -38,6 +38,7 @@ struct Marketplace {
                 let resp = responseJSON["list"]
                 if let resp = resp {
                     Marketplace.shared.cars = resp
+                    print(resp)
                 }
             }
         })
@@ -68,7 +69,7 @@ struct Marketplace {
         }
         guard modelData != nil else { return nil }
         
-        print(modelData)
+//        print(modelData)
         
         // IT IS TERRABLE BUT HAVE NO TIME
         // LIKE LISP :)
@@ -91,7 +92,7 @@ struct Marketplace {
             }
         }
         
-        print(modelData["minPrice"])
+//        print(modelData["minPrice"])
         
         if let price = modelData["minPrice"] as? Int {
             carData.price = String(price)
