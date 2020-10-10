@@ -30,9 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             profileVC.tabBarItem = testBarItem
         }
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let offersVC = storyboard.instantiateViewController(withIdentifier: "Offers")
-        
+        let offersVC = ModuleBuilder.createOfferModule(carBrand: "Cadillac", carModel: "ESCALADE")
         
         // MARK:- Setup NavBar
         let tabBar = UITabBarController()

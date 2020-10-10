@@ -18,6 +18,8 @@ class CameraViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Marketplace.shared.upload()
+        
         takePhotoButton.vtbStyleButton()
         setupLayout()
         prepareCamera()

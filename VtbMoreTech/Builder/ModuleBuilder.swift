@@ -3,6 +3,8 @@ import UIKit
 protocol ProtocolBuilder {
     static func createCameraModule() -> UIViewController
     static func createProfileModule() -> UIViewController
+    static func createCameraModule(image: UIImage, type: typeOfPhoto) -> UIViewController
+    static func createOfferModule(carBrand: String, carModel: String) -> UIViewController
 }
 
 enum typeOfPhoto {
@@ -28,6 +30,14 @@ class ModuleBuilder: ProtocolBuilder {
         let view = ProfileViewController()
         
         return view
+    }
+    
+    static func createOfferModule(carBrand: String, carModel: String) -> UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let offersVC = storyboard.instantiateViewController(withIdentifier: "Offers") as! OffersViewController
+        offersVC.carBrand = carBrand
+        offersVC.carModel = carModel
+        return offersVC
     }
 }
 

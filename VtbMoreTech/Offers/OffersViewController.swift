@@ -32,14 +32,16 @@ class OffersViewController: UIViewController {
     let cellsShadowColor = UIColor(named: "2a002a")?.cgColor
     let productCellIdentifier = "ProductCollectionViewCell"
     
-    var carBrand: String! = "Cadillac"
-    var carModel: String! = "ESCALADE"
+    public var carBrand: String!
+    public var carModel: String!
     var car: CarModel!
     
     private var itemsNumber = 1000
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        priceButton.vtbStyleButton()
         
         if let car = Marketplace.shared.getCarData(carBrand: carBrand.lowercased(), carModel: carModel.lowercased()) {
             self.car = car
