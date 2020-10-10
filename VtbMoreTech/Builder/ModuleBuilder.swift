@@ -5,6 +5,11 @@ protocol ProtocolBuilder {
     static func createProfileModule() -> UIViewController
 }
 
+enum typeOfPhoto {
+    case fromCamera
+    case fromLibrary
+}
+
 class ModuleBuilder: ProtocolBuilder {
     static func createCameraModule() -> UIViewController {
         let view = CameraViewController()
@@ -12,9 +17,10 @@ class ModuleBuilder: ProtocolBuilder {
         return view
     }
     
-    static func createCameraModule(image: UIImage) -> UIViewController {
+    static func createCameraModule(image: UIImage, type: typeOfPhoto) -> UIViewController {
         let view = PreviewPhotoController()
         view.capturedImage = image
+        view.type = type
         return view
     }
     
