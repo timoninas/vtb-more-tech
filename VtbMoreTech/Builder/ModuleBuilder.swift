@@ -4,7 +4,7 @@ protocol ProtocolBuilder {
     static func createCameraModule() -> UIViewController
     static func createProfileModule() -> UIViewController
     static func createCameraModule(image: UIImage, type: typeOfPhoto) -> UIViewController
-    static func createOfferModule(carBrand: String, carModel: String) -> UIViewController
+    static func createOfferModule(carBrand: String, carModel: String, beautyCarBrand: String, beautyCarModel: String) -> UIViewController
 }
 
 enum typeOfPhoto {
@@ -13,6 +13,7 @@ enum typeOfPhoto {
 }
 
 class ModuleBuilder: ProtocolBuilder {
+    
     static func createCameraModule() -> UIViewController {
         let view = CameraViewController()
         
@@ -32,11 +33,13 @@ class ModuleBuilder: ProtocolBuilder {
         return view
     }
     
-    static func createOfferModule(carBrand: String, carModel: String) -> UIViewController {
+    static func createOfferModule(carBrand: String, carModel: String, beautyCarBrand: String, beautyCarModel: String) -> UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let offersVC = storyboard.instantiateViewController(withIdentifier: "Offers") as! OffersViewController
         offersVC.carBrand = carBrand
         offersVC.carModel = carModel
+        offersVC.beautyCarBrand = beautyCarBrand
+        offersVC.beautyCarModel = beautyCarModel
         return offersVC
     }
 }
