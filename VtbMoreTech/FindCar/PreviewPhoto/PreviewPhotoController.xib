@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,19 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iE7-yw-IBZ">
-                    <rect key="frame" x="0.0" y="253" width="414" height="400"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="400" id="UyL-Bl-Qxf"/>
-                    </constraints>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="iE7-yw-IBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1aw-KC-KZ6"/>
-                <constraint firstItem="iE7-yw-IBZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="XO2-s8-J1R"/>
-                <constraint firstItem="iE7-yw-IBZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="a9M-iS-8zP"/>
-                <constraint firstItem="iE7-yw-IBZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jsY-iZ-PmG"/>
+                <constraint firstItem="iE7-yw-IBZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LQr-u4-BRD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iE7-yw-IBZ" secondAttribute="bottom" id="peI-j5-9OO"/>
+                <constraint firstItem="iE7-yw-IBZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rsf-af-LhD"/>
+                <constraint firstItem="iE7-yw-IBZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zNC-sW-h4V"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
         </view>

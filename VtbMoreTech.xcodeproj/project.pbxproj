@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E5838CA55BC77AC9BB198E0 /* Pods_VtbMoreTechTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */; };
+		77287F002531BAF200D63F1C /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287EFF2531BAF200D63F1C /* Extension+UIImage.swift */; };
+		77287F082531D62D00D63F1C /* CalculateParametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287F072531D62D00D63F1C /* CalculateParametrs.swift */; };
+		77287F0D2531D66800D63F1C /* ResultCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287F0C2531D66800D63F1C /* ResultCalculate.swift */; };
 		77BCB5C825304D8F00F8B1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */; };
 		77BCB5CA25304D8F00F8B1C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */; };
 		77BCB5D125304D9200F8B1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB5D025304D9200F8B1C1 /* Assets.xcassets */; };
@@ -39,6 +42,8 @@
 		C4689F8B25313381009BB079 /* OffersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */; };
 		C8CB392D218AA132994AFDB0 /* Pods_VtbMoreTech_VtbMoreTechUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */; };
 		DF5A3A784D4BA0DF94D9ECFC /* Pods_VtbMoreTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */; };
+		77BCB6552530AB4E00F8B1C1 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */; };
+		77BCB6632531B0FA00F8B1C1 /* CarRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,9 @@
 		4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTech_VtbMoreTechUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTechTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		748559A233553176729223E0 /* Pods-VtbMoreTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTechTests.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTechTests/Pods-VtbMoreTechTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77287EFF2531BAF200D63F1C /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		77287F072531D62D00D63F1C /* CalculateParametrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateParametrs.swift; sourceTree = "<group>"; };
+		77287F0C2531D66800D63F1C /* ResultCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculate.swift; sourceTree = "<group>"; };
 		77BCB5C425304D8F00F8B1C1 /* VtbMoreTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VtbMoreTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 		C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCollectionViewController.swift; sourceTree = "<group>"; };
 		E3BBEACD0D9A63C1A6597695 /* Pods-VtbMoreTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech.debug.xcconfig"; sourceTree = "<group>"; };
 		F98C2290335088B243DF34EB /* Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
+		77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRecognitionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +194,9 @@
 				C410A6BA2531A1380092B62D /* Main.storyboard */,
 				77BCB5D225304D9200F8B1C1 /* LaunchScreen.storyboard */,
 				77BCB5D525304D9200F8B1C1 /* Info.plist */,
+				77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */,
+				77287F072531D62D00D63F1C /* CalculateParametrs.swift */,
+				77287F0C2531D66800D63F1C /* ResultCalculate.swift */,
 			);
 			path = VtbMoreTech;
 			sourceTree = "<group>";
@@ -237,6 +250,8 @@
 			children = (
 				C4689F632530C2DA009BB079 /* Extensions+UIView.swift */,
 				77BCB62825306CA400F8B1C1 /* Extensions+UIColor.swift */,
+				77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */,
+				77287EFF2531BAF200D63F1C /* Extension+UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -572,7 +587,9 @@
 				C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */,
 				C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */,
 				C4689F702530CD56009BB079 /* Designable.swift in Sources */,
+				77287F082531D62D00D63F1C /* CalculateParametrs.swift in Sources */,
 				77BCB60625304F5800F8B1C1 /* CameraViewController.swift in Sources */,
+				77287F002531BAF200D63F1C /* Extension+UIImage.swift in Sources */,
 				77BCB5C825304D8F00F8B1C1 /* AppDelegate.swift in Sources */,
 				77BCB63525306D0200F8B1C1 /* SchemeColor.swift in Sources */,
 				77BCB5FF25304EB400F8B1C1 /* ProfileViewController.swift in Sources */,
@@ -581,6 +598,9 @@
 				C4689F602530C253009BB079 /* OffersTableViewController.swift in Sources */,
 				C4689F732530CD56009BB079 /* CollectionViewController.swift in Sources */,
 				C4689F8B25313381009BB079 /* OffersCollectionViewController.swift in Sources */,
+				77BCB6632531B0FA00F8B1C1 /* CarRecognitionService.swift in Sources */,
+				77BCB62925306CA400F8B1C1 /* Extensions+UIColor.swift in Sources */,
+				77287F0D2531D66800D63F1C /* ResultCalculate.swift in Sources */,
 				77BCB61A25304FCC00F8B1C1 /* ModuleBuilder.swift in Sources */,
 				C4689F6F2530CD56009BB079 /* CollectionViewCell.swift in Sources */,
 				C4689F722530CD56009BB079 /* TableViewController.swift in Sources */,
@@ -589,6 +609,7 @@
 				C4689F6E2530CD56009BB079 /* TableViewCell.swift in Sources */,
 				77BCB6412530835C00F8B1C1 /* PreviewPhotoController.swift in Sources */,
 				C4689F622530C268009BB079 /* OffersViewController.swift in Sources */,
+				77BCB6552530AB4E00F8B1C1 /* Extension+UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -760,6 +781,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X92LK22555;
 				INFOPLIST_FILE = VtbMoreTech/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -780,6 +802,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X92LK22555;
 				INFOPLIST_FILE = VtbMoreTech/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
