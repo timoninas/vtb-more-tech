@@ -71,6 +71,7 @@ struct Marketplace {
         print(modelData)
         
         // IT IS TERRABLE BUT HAVE NO TIME
+        // LIKE LISP :)
         if let imagesData = modelData["renderPhotos"] as! [String: Any]? {
             for (_, imageData) in imagesData {
                 if let imageData = imageData as? [String: Any] { // back
@@ -87,8 +88,13 @@ struct Marketplace {
                         }
                     }
                 }
-                
             }
+        }
+        
+        print(modelData["minPrice"])
+        
+        if let price = modelData["minPrice"] as? Int {
+            carData.price = String(price)
         }
         
         return carData

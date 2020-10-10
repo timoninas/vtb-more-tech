@@ -17,6 +17,7 @@ class OffersViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var productSubtitleLabel: UILabel!
     @IBOutlet weak var productTitleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var images = [UIImage]()
     let titles = [String]()
@@ -43,8 +44,22 @@ class OffersViewController: UIViewController {
         if let car = Marketplace.shared.getCarData(carBrand: carBrand.lowercased(), carModel: carModel.lowercased()) {
             self.car = car
             self.images = car.images
+//            self.titleLabel.text = carBrand + " " + carModel
+            
+            let attributedTitle = NSMutableAttributedString(string: carBrand, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), .font: UIFont.systemFont(ofSize: 34, weight: .medium)])
+            attributedTitle.append(NSMutableAttributedString(string: "\n" + carModel, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), .font: UIFont.systemFont(ofSize: 20, weight: .light)]))
+            
+            self.titleLabel.attributedText = attributedTitle
+            self.productSubtitleLabel.text = "Цена автомобиля указана в базовой комплектации"
+            
+            
+            self.titleLabel.numberOfLines = 2
+            self.titleLabel.lineBreakMode = .byWordWrapping
+//            self.titleLabel.
+            self.productTitleLabel.text = car.price + " ₽"
+            self.productTitleLabel.font = UIFont.systemFont(ofSize: 25)
         } else {
-            // Emmpty state
+            self.titleLabel.text = "Автомобиль не найдено"
         }
         
         configureCollectionView()
@@ -57,7 +72,7 @@ class OffersViewController: UIViewController {
         collectionView.collectionViewLayout = gravitySliderLayout
         collectionView.dataSource = self
         collectionView.delegate = self
-        pageControl.numberOfPages = 4
+        pageControl.numberOfPages = 0
     }
     
     private func configurePriceButton() {
@@ -124,6 +139,8 @@ extension OffersViewController: UICollectionViewDataSource {
         return cell
     }
 }
+
+var prevIndex = 0
 
 extension OffersViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
