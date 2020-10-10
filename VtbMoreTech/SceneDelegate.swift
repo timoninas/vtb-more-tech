@@ -1,4 +1,5 @@
 import UIKit
+//import GravitySliderFlowLayout
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -7,6 +8,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let windowScene = scene as! UIWindowScene
         let window = UIWindow(windowScene: windowScene)
+        
+        Marketplace.shared.upload()
             
         // MARK:-TestVC
         let cameraVC = ModuleBuilder.createCameraModule()
@@ -27,20 +30,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             profileVC.tabBarItem = testBarItem
         }
         
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let offersVC = storyboard.instantiateViewController(withIdentifier: "Offers")
+        
         
         // MARK:- Setup NavBar
         let tabBar = UITabBarController()
         tabBar.tabBar.tintColor = UIColor.appColor(.TabBarTintColor)
         tabBar.tabBar.barTintColor = UIColor.appColor(.TabBarBackgroundColor)
-        tabBar.setViewControllers([navBarCamera, navBarProfile], animated: true)
+        tabBar.setViewControllers([navBarCamera, offersVC], animated: true)
         tabBar.selectedViewController = navBarCamera
         tabBar.tabBar.unselectedItemTintColor = UIColor.appColor(.White)
-        
+
         window.rootViewController = tabBar
-        
+
         window.backgroundColor = .white
         self.window = window
         window.makeKeyAndVisible()
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
     

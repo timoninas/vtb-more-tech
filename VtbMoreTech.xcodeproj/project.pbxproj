@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5838CA55BC77AC9BB198E0 /* Pods_VtbMoreTechTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */; };
 		77BCB5C825304D8F00F8B1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */; };
 		77BCB5CA25304D8F00F8B1C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */; };
 		77BCB5D125304D9200F8B1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB5D025304D9200F8B1C1 /* Assets.xcassets */; };
@@ -22,6 +23,22 @@
 		77BCB63525306D0200F8B1C1 /* SchemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB63425306D0200F8B1C1 /* SchemeColor.swift */; };
 		77BCB6412530835C00F8B1C1 /* PreviewPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB63F2530835B00F8B1C1 /* PreviewPhotoController.swift */; };
 		77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */; };
+		C410A6BB2531A1380092B62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410A6BA2531A1380092B62D /* Main.storyboard */; };
+		C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FD6E2531A93700F577F9 /* ProductCollectionViewCell.swift */; };
+		C437FDB42531BA0500F577F9 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FDB32531BA0500F577F9 /* CarModel.swift */; };
+		C4689F602530C253009BB079 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F5F2530C253009BB079 /* OffersTableViewController.swift */; };
+		C4689F622530C268009BB079 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F612530C268009BB079 /* OffersViewController.swift */; };
+		C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F632530C2DA009BB079 /* Extensions+UIView.swift */; };
+		C4689F6E2530CD56009BB079 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F672530CD56009BB079 /* TableViewCell.swift */; };
+		C4689F6F2530CD56009BB079 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F682530CD56009BB079 /* CollectionViewCell.swift */; };
+		C4689F702530CD56009BB079 /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F692530CD56009BB079 /* Designable.swift */; };
+		C4689F712530CD56009BB079 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F6B2530CD56009BB079 /* ViewController.swift */; };
+		C4689F722530CD56009BB079 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F6C2530CD56009BB079 /* TableViewController.swift */; };
+		C4689F732530CD56009BB079 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F6D2530CD56009BB079 /* CollectionViewController.swift */; };
+		C4689F7525311C0A009BB079 /* Marketplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F7425311C0A009BB079 /* Marketplace.swift */; };
+		C4689F8B25313381009BB079 /* OffersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */; };
+		C8CB392D218AA132994AFDB0 /* Pods_VtbMoreTech_VtbMoreTechUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */; };
+		DF5A3A784D4BA0DF94D9ECFC /* Pods_VtbMoreTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +59,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02C5C0522AD4B5F053126370 /* Pods-VtbMoreTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech.release.xcconfig"; sourceTree = "<group>"; };
+		4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTech_VtbMoreTechUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTechTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		748559A233553176729223E0 /* Pods-VtbMoreTechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTechTests.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTechTests/Pods-VtbMoreTechTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77BCB5C425304D8F00F8B1C1 /* VtbMoreTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VtbMoreTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +84,25 @@
 		77BCB63425306D0200F8B1C1 /* SchemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeColor.swift; sourceTree = "<group>"; };
 		77BCB63F2530835B00F8B1C1 /* PreviewPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoController.swift; sourceTree = "<group>"; };
 		77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewPhotoController.xib; sourceTree = "<group>"; };
+		82DAE5521E45A0DD1147594F /* Pods-VtbMoreTechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTechTests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTechTests/Pods-VtbMoreTechTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF9178B31A4FFFC6BEC8A864 /* Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C410A6BA2531A1380092B62D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C437FD6E2531A93700F577F9 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		C437FDB32531BA0500F577F9 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		C4689F5F2530C253009BB079 /* OffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTableViewController.swift; sourceTree = "<group>"; };
+		C4689F612530C268009BB079 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		C4689F632530C2DA009BB079 /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		C4689F672530CD56009BB079 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C4689F682530CD56009BB079 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		C4689F692530CD56009BB079 /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
+		C4689F6B2530CD56009BB079 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4689F6C2530CD56009BB079 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		C4689F6D2530CD56009BB079 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		C4689F7425311C0A009BB079 /* Marketplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marketplace.swift; sourceTree = "<group>"; };
+		C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCollectionViewController.swift; sourceTree = "<group>"; };
+		E3BBEACD0D9A63C1A6597695 /* Pods-VtbMoreTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech.debug.xcconfig"; sourceTree = "<group>"; };
+		F98C2290335088B243DF34EB /* Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5A3A784D4BA0DF94D9ECFC /* Pods_VtbMoreTech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5838CA55BC77AC9BB198E0 /* Pods_VtbMoreTechTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +126,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8CB392D218AA132994AFDB0 /* Pods_VtbMoreTech_VtbMoreTechUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0958351D97841266F952FDE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */,
+				4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */,
+				6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77BCB5BB25304D8F00F8B1C1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +150,10 @@
 				77BCB5DD25304D9200F8B1C1 /* VtbMoreTechTests */,
 				77BCB5E825304D9200F8B1C1 /* VtbMoreTechUITests */,
 				77BCB5C525304D8F00F8B1C1 /* Products */,
+				C4689F6A2530CD56009BB079 /* ViewControllers */,
+				C4689F652530CD56009BB079 /* Views */,
+				79B43587CDC4CDDBAA3CC65D /* Pods */,
+				0958351D97841266F952FDE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,11 +173,15 @@
 				77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */,
 				77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */,
 				77BCB63425306D0200F8B1C1 /* SchemeColor.swift */,
+				C437FDB22531B96E00F577F9 /* Additional */,
+				C4689F7625311E79009BB079 /* Marketplace */,
+				C4689F5E2530C1F2009BB079 /* Offers */,
 				77BCB61E2530515100F8B1C1 /* Builder */,
 				77BCB62D25306CD000F8B1C1 /* Extensions */,
 				77BCB64D25309EC800F8B1C1 /* FindCar */,
 				77BCB60F25304F9800F8B1C1 /* Profile */,
 				77BCB5D025304D9200F8B1C1 /* Assets.xcassets */,
+				C410A6BA2531A1380092B62D /* Main.storyboard */,
 				77BCB5D225304D9200F8B1C1 /* LaunchScreen.storyboard */,
 				77BCB5D525304D9200F8B1C1 /* Info.plist */,
 			);
@@ -174,6 +235,7 @@
 		77BCB62D25306CD000F8B1C1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C4689F632530C2DA009BB079 /* Extensions+UIView.swift */,
 				77BCB62825306CA400F8B1C1 /* Extensions+UIColor.swift */,
 			);
 			path = Extensions;
@@ -197,6 +259,74 @@
 			path = FindCar;
 			sourceTree = "<group>";
 		};
+		79B43587CDC4CDDBAA3CC65D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3BBEACD0D9A63C1A6597695 /* Pods-VtbMoreTech.debug.xcconfig */,
+				02C5C0522AD4B5F053126370 /* Pods-VtbMoreTech.release.xcconfig */,
+				AF9178B31A4FFFC6BEC8A864 /* Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig */,
+				F98C2290335088B243DF34EB /* Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig */,
+				748559A233553176729223E0 /* Pods-VtbMoreTechTests.debug.xcconfig */,
+				82DAE5521E45A0DD1147594F /* Pods-VtbMoreTechTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C437FDB22531B96E00F577F9 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */,
+				C4689F5F2530C253009BB079 /* OffersTableViewController.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+		C4689F5E2530C1F2009BB079 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				C437FD6E2531A93700F577F9 /* ProductCollectionViewCell.swift */,
+				C4689F612530C268009BB079 /* OffersViewController.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		C4689F652530CD56009BB079 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4689F662530CD56009BB079 /* Cells */,
+				C4689F692530CD56009BB079 /* Designable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4689F662530CD56009BB079 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C4689F672530CD56009BB079 /* TableViewCell.swift */,
+				C4689F682530CD56009BB079 /* CollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C4689F6A2530CD56009BB079 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4689F6B2530CD56009BB079 /* ViewController.swift */,
+				C4689F6C2530CD56009BB079 /* TableViewController.swift */,
+				C4689F6D2530CD56009BB079 /* CollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4689F7625311E79009BB079 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				C4689F7425311C0A009BB079 /* Marketplace.swift */,
+				C437FDB32531BA0500F577F9 /* CarModel.swift */,
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,9 +334,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77BCB5EE25304D9200F8B1C1 /* Build configuration list for PBXNativeTarget "VtbMoreTech" */;
 			buildPhases = (
+				DF9DB1E7E0CE2FBD01345EFE /* [CP] Check Pods Manifest.lock */,
 				77BCB5C025304D8F00F8B1C1 /* Sources */,
 				77BCB5C125304D8F00F8B1C1 /* Frameworks */,
 				77BCB5C225304D8F00F8B1C1 /* Resources */,
+				818A1EB40AC30B42CA02D7AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +353,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77BCB5F125304D9200F8B1C1 /* Build configuration list for PBXNativeTarget "VtbMoreTechTests" */;
 			buildPhases = (
+				AE0024E7488BC5B92C8663D1 /* [CP] Check Pods Manifest.lock */,
 				77BCB5D625304D9200F8B1C1 /* Sources */,
 				77BCB5D725304D9200F8B1C1 /* Frameworks */,
 				77BCB5D825304D9200F8B1C1 /* Resources */,
@@ -239,9 +372,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77BCB5F425304D9200F8B1C1 /* Build configuration list for PBXNativeTarget "VtbMoreTechUITests" */;
 			buildPhases = (
+				ECEDC8D0E591481C789684C9 /* [CP] Check Pods Manifest.lock */,
 				77BCB5E125304D9200F8B1C1 /* Sources */,
 				77BCB5E225304D9200F8B1C1 /* Frameworks */,
 				77BCB5E325304D9200F8B1C1 /* Resources */,
+				DF353530273B371209EA065B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +438,7 @@
 				77BCB5D425304D9200F8B1C1 /* LaunchScreen.storyboard in Resources */,
 				77BCB5D125304D9200F8B1C1 /* Assets.xcassets in Resources */,
 				77BCB60025304EB400F8B1C1 /* ProfileViewController.xib in Resources */,
+				C410A6BB2531A1380092B62D /* Main.storyboard in Resources */,
 				77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */,
 				77BCB60725304F5800F8B1C1 /* CameraViewController.xib in Resources */,
 			);
@@ -324,19 +460,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		818A1EB40AC30B42CA02D7AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE0024E7488BC5B92C8663D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VtbMoreTechTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF353530273B371209EA065B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9DB1E7E0CE2FBD01345EFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VtbMoreTech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECEDC8D0E591481C789684C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VtbMoreTech-VtbMoreTechUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		77BCB5C025304D8F00F8B1C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4689F712530CD56009BB079 /* ViewController.swift in Sources */,
+				C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */,
+				C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */,
+				C4689F702530CD56009BB079 /* Designable.swift in Sources */,
 				77BCB60625304F5800F8B1C1 /* CameraViewController.swift in Sources */,
 				77BCB5C825304D8F00F8B1C1 /* AppDelegate.swift in Sources */,
 				77BCB63525306D0200F8B1C1 /* SchemeColor.swift in Sources */,
 				77BCB5FF25304EB400F8B1C1 /* ProfileViewController.swift in Sources */,
+				C437FDB42531BA0500F577F9 /* CarModel.swift in Sources */,
 				77BCB62925306CA400F8B1C1 /* Extensions+UIColor.swift in Sources */,
+				C4689F602530C253009BB079 /* OffersTableViewController.swift in Sources */,
+				C4689F732530CD56009BB079 /* CollectionViewController.swift in Sources */,
+				C4689F8B25313381009BB079 /* OffersCollectionViewController.swift in Sources */,
 				77BCB61A25304FCC00F8B1C1 /* ModuleBuilder.swift in Sources */,
+				C4689F6F2530CD56009BB079 /* CollectionViewCell.swift in Sources */,
+				C4689F722530CD56009BB079 /* TableViewController.swift in Sources */,
+				C4689F7525311C0A009BB079 /* Marketplace.swift in Sources */,
 				77BCB5CA25304D8F00F8B1C1 /* SceneDelegate.swift in Sources */,
+				C4689F6E2530CD56009BB079 /* TableViewCell.swift in Sources */,
 				77BCB6412530835C00F8B1C1 /* PreviewPhotoController.swift in Sources */,
+				C4689F622530C268009BB079 /* OffersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +741,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -501,6 +753,7 @@
 		};
 		77BCB5EF25304D9200F8B1C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BBEACD0D9A63C1A6597695 /* Pods-VtbMoreTech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -520,6 +773,7 @@
 		};
 		77BCB5F025304D9200F8B1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C5C0522AD4B5F053126370 /* Pods-VtbMoreTech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,6 +793,7 @@
 		};
 		77BCB5F225304D9200F8B1C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748559A233553176729223E0 /* Pods-VtbMoreTechTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -561,6 +816,7 @@
 		};
 		77BCB5F325304D9200F8B1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82DAE5521E45A0DD1147594F /* Pods-VtbMoreTechTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -583,6 +839,7 @@
 		};
 		77BCB5F525304D9200F8B1C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9178B31A4FFFC6BEC8A864 /* Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -603,6 +860,7 @@
 		};
 		77BCB5F625304D9200F8B1C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F98C2290335088B243DF34EB /* Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
