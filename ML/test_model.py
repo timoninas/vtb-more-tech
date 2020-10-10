@@ -17,8 +17,17 @@ def get_preds(url, fname):
     t1 = time.time()
     response = requests.post(url, req_data)
     t2 = time.time()
-    result = json.loads(response.content)
-    return result['probabilities'], t2 - t1
+    try:
+        result = json.loads(response.content)
+    except:
+        print(response.content)
+        result = {}
+    if 'probabilities' not in result:
+        print(result)
+        res = {'Empty': 1}
+    else:
+        res = result['probabilities']
+    return res, t2 - t1
 
 
 def get_class(preds):
@@ -27,7 +36,7 @@ def get_class(preds):
 
 if __name__ == '__main__':
     api_url = sys.argv[1]
-    if sys.argv[2].endswith('.jpeg'):
+    if sys.argv[2].endswith('.jpeg') or sys.argv[2].endswith('.jpg'):
         preds, t = get_preds(api_url, sys.argv[2])
         pred_cls = get_class(preds)
         print(t)
