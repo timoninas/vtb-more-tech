@@ -31,9 +31,10 @@ class OffersViewController: UIViewController {
     let gradientSecondColor = UIColor(named: "a81382")?.cgColor
     let cellsShadowColor = UIColor(named: "2a002a")?.cgColor
     let productCellIdentifier = "ProductCollectionViewCell"
-    
-    var carBrand: String! = ""
-    var carModel: String! = ""
+
+    public var carBrand: String!
+    public var carModel: String!
+
     var car: CarModel!
     
     private var itemsNumber = 1000
@@ -41,10 +42,15 @@ class OffersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        priceButton.vtbStyleButton()
+        
         if let car = Marketplace.shared.getCarData(carBrand: carBrand.lowercased(), carModel: carModel.lowercased()) {
             self.car = car
             self.images = car.images
 //            self.titleLabel.text = carBrand + " " + carModel
+            
+            print(carBrand)
+            print(carModel)
             
             let attributedTitle = NSMutableAttributedString(string: carBrand, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), .font: UIFont.systemFont(ofSize: 34, weight: .medium)])
             attributedTitle.append(NSMutableAttributedString(string: "\n" + carModel, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), .font: UIFont.systemFont(ofSize: 20, weight: .light)]))

@@ -79,8 +79,8 @@ struct Marketplace {
                     for (_, typeImageData) in imageData {
                         if let typeImageData = typeImageData as? [String: Any] {
                             if let imagePath = typeImageData["path"] as? String {
-                                let url = URL(string: imagePath)
-                                if let data = try? Data(contentsOf: url!) {
+                                guard let url = URL(string: imagePath) else { return nil }
+                                if let data = try? Data(contentsOf: url) {
                                     if let image = UIImage(data: data) {
                                         carData.images.append(image)
                                     }
