@@ -27,25 +27,32 @@ def get_class(preds):
 
 if __name__ == '__main__':
     api_url = sys.argv[1]
-    data_dir = sys.argv[2]
-    classes = os.listdir(data_dir)
-    for cls in tqdm(classes):
-        folder = os.path.join(data_dir, cls)
-        count = 0
-        correct = 0
-        counter = Counter()
-        for img_name in tqdm(os.listdir(folder), leave=False):
-            img_path = os.path.join(folder, img_name)
-            try:
-                preds, t = get_preds(api_url, img_path)
-                pred_cls = get_class(preds)
-                counter[pred_cls] += 1
-                correct += pred_cls == cls
-                count += 1
-            except KeyboardInterrupt:
-                sys.exit(0)
-            except BaseException as err:
-                print(img_path, err)
-        print(f'Results for {cls}')
-        print(f'Correct {correct} from {count} answers: {correct / count}')
-        print(counter)
+    if sys.argv[2].endswith('.jpeg'):
+        preds, t = get_preds(api_url, sys.argv[2])
+        pred_cls = get_class(preds)
+        print(t)
+        print(preds)
+        print(pred_cls)
+    else:
+        data_dir = sys.argv[2]
+        classes = os.listdir(data_dir)
+        for cls in tqdm(classes):
+            folder = os.path.join(data_dir, cls)
+            count = 0
+            correct = 0
+            counter = Counter()
+            for img_name in tqdm(os.listdir(folder), leave=False):
+                img_path = os.path.join(folder, img_name)
+                try:
+                    preds, t = get_preds(api_url, img_path)
+                    pred_cls = get_class(preds)
+                    counter[pred_cls] += 1
+                    correct += pred_cls == cls
+                    count += 1
+                except KeyboardInterrupt:
+                    sys.exit(0)
+                except BaseException as err:
+                    print(img_path, err)
+            print(f'Results for {cls}')
+            print(f'Correct {correct} from {count} answers: {correct / count}')
+            print(counter)

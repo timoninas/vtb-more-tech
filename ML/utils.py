@@ -49,6 +49,9 @@ def build_model(nclasses, hidden_layers=None):
 def load_model(fname):
     model = build_model(5, [100])
     model.load_state_dict(torch.load(fname))
+    model.eval()
+    for param in model.parameters():
+        param.requires_grad = False
     return model.to(device)
 
 
@@ -61,7 +64,8 @@ def string_to_input(base64_string):
 
 def inference(model, input):
     input = string_to_input(input).view(-1, 3, 224, 224)
-    output = model(input).cpu().data[0]
+    with torch.set_grad_enabled(False):
+        output = model(input).cpu().data[0].cpu()
     probs = nn.functional.softmax(output).cpu()
     result = {}
     for i, value in enumerate(probs):
