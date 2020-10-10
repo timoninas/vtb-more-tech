@@ -38,7 +38,6 @@ struct Marketplace {
                 let resp = responseJSON["list"]
                 if let resp = resp {
                     Marketplace.shared.cars = resp
-                    print(resp)
                 }
             }
         })
@@ -47,12 +46,24 @@ struct Marketplace {
     
     func getCarData(carBrand: String, carModel: String) -> CarModel! {
         var carData = CarModel(brand: carBrand, model: carModel)
-        
         // Search brand
         var brandData: [String: Any]!
         for car in cars {
             if car["alias"] as? String == carBrand {
                 brandData = car
+                break
+            }
+            if car["title"] as? String == carBrand {
+                brandData = car
+                break
+            }
+            if let brand = car["brand"] as? [String: Any] {
+                if let alias = brand["alias"] as? String {
+                    if alias == carBrand {
+                        brandData = car
+                        break
+                    }
+                }
             }
         }
         guard brandData != nil else { return nil }
@@ -65,6 +76,11 @@ struct Marketplace {
         for model in models {
             if model["alias"] as? String == carModel {
                 modelData = model
+                break
+            }
+            if model["title"] as? String == carModel {
+                modelData = model
+                break
             }
         }
         guard modelData != nil else { return nil }
@@ -79,10 +95,11 @@ struct Marketplace {
                     for (_, typeImageData) in imageData {
                         if let typeImageData = typeImageData as? [String: Any] {
                             if let imagePath = typeImageData["path"] as? String {
-                                guard let url = URL(string: imagePath) else { return nil }
-                                if let data = try? Data(contentsOf: url) {
-                                    if let image = UIImage(data: data) {
-                                        carData.images.append(image)
+                                if let url = URL(string: imagePath) {
+                                    if let data = try? Data(contentsOf: url) {
+                                        if let image = UIImage(data: data) {
+                                            carData.images.append(image)
+                                        }
                                     }
                                 }
                             }

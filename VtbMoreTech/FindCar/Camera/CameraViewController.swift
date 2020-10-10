@@ -4,6 +4,9 @@ import Photos
 
 class CameraViewController: UIViewController {
     
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent //.default for black style
+    }
     
     @IBOutlet weak var takePhotoButton: UIButton!
     
@@ -21,6 +24,8 @@ class CameraViewController: UIViewController {
         Marketplace.shared.upload()
         
         takePhotoButton.vtbStyleButton()
+        takePhotoButton.backgroundColor = .lightGray
+        choosePhotoFromLibraryButton.vtbStyleButton()
         setupLayout()
         prepareCamera()
         request()
@@ -170,9 +175,34 @@ class CameraViewController: UIViewController {
         setupNavBar()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setPhotoButton()
+    }
+    
+    func setPhotoButton() {
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.6
+        pulse.fromValue = 1.0
+        pulse.toValue = 1.03
+        pulse.autoreverses = true
+        pulse.repeatCount = .infinity
+        pulse.initialVelocity = 0.5
+        pulse.damping = 0.8
+        self.takePhotoButton.layer.add(pulse, forKey: nil)
+    }
+    
     func setupNavBar() {
-        navigationItem.title = "Поиск машины";
-        view.backgroundColor = UIColor.appColor(.White)
+        let size = 250
+        self.takePhotoButton.frame = CGRect(x: Int(self.view.bounds.width) / 2 - size / 2, y: Int(self.view.bounds.height) / 2 - size / 2, width: size, height: size)
+        self.takePhotoButton.layer.cornerRadius = 0.5 * takePhotoButton.bounds.size.width
+        self.takePhotoButton.contentMode = .center
+        self.takePhotoButton.imageView?.contentMode = .scaleAspectFit
+        self.takePhotoButton.imageView?.tintColor = .white
+        setPhotoButton()
+        
+        navigationItem.title = "VTB TECH";
+//        view.backgroundColor = UIColor.appColor(.White)
+        self.view.backgroundColor = UIColor.appColor(.TabBarBackgroundColor)
         navigationController?.navigationBar.barTintColor = UIColor.appColor(.TabBarBackgroundColor)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.appColor(.White)]
     }
