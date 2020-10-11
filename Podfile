@@ -8,6 +8,9 @@ target 'VtbMoreTech' do
   # Pods for VtbMoreTech
   pod "ViewAnimator"
   pod 'GravitySliderFlowLayout'
+  pod 'XLForm'
+  pod 'JVFloatLabeledTextField', '1.0.2', :inhibit_warnings => true
+  pod 'AXRatingView', '1.0.3', :inhibit_warnings => true
 
   target 'VtbMoreTechTests' do
     inherit! :search_paths

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -74,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1N-8j-3l0">
-                                <rect key="frame" x="0.0" y="529.33333333333337" width="375" height="22"/>
+                                <rect key="frame" x="0.0" y="539.33333333333337" width="375" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="iIT-yE-Yma"/>
                                 </constraints>
@@ -82,8 +80,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBN-he-sFQ">
-                                <rect key="frame" x="20" y="566.33333333333337" width="335" height="143.66666666666663"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBN-he-sFQ">
+                                <rect key="frame" x="20" y="566" width="335" height="91"/>
                                 <string key="text">For most people, buying a new computer does not have to be as stressful as 
 buying a new car. 
 </string>
@@ -92,18 +90,18 @@ buying a new car.
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_image" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-6L-ROj">
-                                <rect key="frame" x="29" y="734" width="20" height="20"/>
+                                <rect key="frame" x="29" y="724" width="20" height="20"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-qN-Wrt">
-                                <rect key="frame" x="127" y="519.33333333333337" width="121.33333333333331" height="20"/>
+                                <rect key="frame" x="168" y="519.33333333333337" width="39" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="WgJ-Y2-awG"/>
                                 </constraints>
                                 <color key="pageIndicatorTintColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.8901960784313725" green="0.22352941176470587" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evu-fF-RbW">
-                                <rect key="frame" x="16" y="720" width="343" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evu-fF-RbW">
+                                <rect key="frame" x="16" y="695" width="343" height="48"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="dhs-dn-0K9"/>
@@ -112,14 +110,13 @@ buying a new car.
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Рассчитать кредит"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didPressPriceButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nt-FD-vRv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="B1N-8j-3l0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="24h-W6-XMt"/>
@@ -128,9 +125,9 @@ buying a new car.
                             <constraint firstItem="HX0-Kr-3WV" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="HBq-x7-KdF"/>
                             <constraint firstItem="MB3-qN-Wrt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L7Q-H4-XjA"/>
                             <constraint firstItem="evu-fF-RbW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="M7b-BV-s4Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evu-fF-RbW" secondAttribute="bottom" constant="10" id="PsX-Z4-7J0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evu-fF-RbW" secondAttribute="bottom" constant="20" id="PsX-Z4-7J0"/>
                             <constraint firstItem="HX0-Kr-3WV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="UDu-Vq-5iu"/>
-                            <constraint firstItem="CBN-he-sFQ" firstAttribute="top" secondItem="B1N-8j-3l0" secondAttribute="bottom" constant="15" id="VAs-gs-B70"/>
+                            <constraint firstItem="CBN-he-sFQ" firstAttribute="top" secondItem="B1N-8j-3l0" secondAttribute="bottom" constant="5" id="VAs-gs-B70"/>
                             <constraint firstItem="MB3-qN-Wrt" firstAttribute="top" secondItem="HX0-Kr-3WV" secondAttribute="bottom" id="XUj-BR-VK7"/>
                             <constraint firstItem="LgE-7I-9x7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="Xhg-q0-HOu"/>
                             <constraint firstItem="HX0-Kr-3WV" firstAttribute="top" secondItem="LgE-7I-9x7" secondAttribute="bottom" constant="30" id="b6x-BX-Vca"/>
@@ -139,12 +136,13 @@ buying a new car.
                             <constraint firstItem="CBN-he-sFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eJg-b4-nCW"/>
                             <constraint firstItem="evu-fF-RbW" firstAttribute="leading" secondItem="z4d-6L-ROj" secondAttribute="trailing" constant="-33" id="iFD-Zz-IjI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HX0-Kr-3WV" secondAttribute="trailing" id="lNp-01-hEb"/>
-                            <constraint firstItem="evu-fF-RbW" firstAttribute="top" secondItem="CBN-he-sFQ" secondAttribute="bottom" constant="10" id="uLQ-Zt-jWl"/>
+                            <constraint firstItem="evu-fF-RbW" firstAttribute="top" secondItem="CBN-he-sFQ" secondAttribute="bottom" constant="36" id="uLQ-Zt-jWl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B1N-8j-3l0" secondAttribute="trailing" id="uRU-pU-AHe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LgE-7I-9x7" secondAttribute="trailing" constant="45" id="ud7-1a-Qjx"/>
-                            <constraint firstItem="B1N-8j-3l0" firstAttribute="top" secondItem="HX0-Kr-3WV" secondAttribute="bottom" constant="10" id="vjV-ve-sFU"/>
+                            <constraint firstItem="B1N-8j-3l0" firstAttribute="top" secondItem="HX0-Kr-3WV" secondAttribute="bottom" constant="20" id="vjV-ve-sFU"/>
                             <constraint firstItem="LgE-7I-9x7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xkL-Cn-vEf"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="HX0-Kr-3WV" id="QOi-Ng-scf"/>
@@ -165,8 +163,5 @@ buying a new car.
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

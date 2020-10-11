@@ -25,15 +25,19 @@ class OffersViewController: UIViewController {
     let prices = [String]()
     
     let collectionViewCellHeightCoefficient: CGFloat = 0.95
-    let collectionViewCellWidthCoefficient: CGFloat = 0.75
+    let collectionViewCellWidthCoefficient: CGFloat = 0.95
     let priceButtonCornerRadius: CGFloat = 10
     let gradientFirstColor = UIColor(named: "ff8181")?.cgColor
     let gradientSecondColor = UIColor(named: "a81382")?.cgColor
-    let cellsShadowColor = UIColor(named: "2a002a")?.cgColor
+    let cellsShadowColor = UIColor.white // UIColor(named: "2a002a")?.cgColor
     let productCellIdentifier = "ProductCollectionViewCell"
-    
+
     public var carBrand: String!
     public var carModel: String!
+    
+    public var beautyCarBrand: String!
+    public var beautyCarModel: String!
+
     var car: CarModel!
     
     private var itemsNumber = 1000
@@ -41,28 +45,46 @@ class OffersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.appColor(.TabBarBackgroundColor)
+        self.collectionView.backgroundColor = UIColor.appColor(.TabBarBackgroundColor)
+        
+//        print(carBrand)
+//        print(carModel)
+        
         priceButton.vtbStyleButton()
+        
+        self.productTitleLabel.isHidden = false
+        self.productSubtitleLabel.isHidden = false
+        self.productSubtitleLabel.isHidden = false
+        self.priceButton.isHidden = false
         
         if let car = Marketplace.shared.getCarData(carBrand: carBrand.lowercased(), carModel: carModel.lowercased()) {
             self.car = car
             self.images = car.images
 //            self.titleLabel.text = carBrand + " " + carModel
             
-            let attributedTitle = NSMutableAttributedString(string: carBrand, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), .font: UIFont.systemFont(ofSize: 34, weight: .medium)])
-            attributedTitle.append(NSMutableAttributedString(string: "\n" + carModel, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), .font: UIFont.systemFont(ofSize: 20, weight: .light)]))
+            navigationItem.title = beautyCarBrand;
+            
+            let attributedTitle = NSMutableAttributedString(string: beautyCarModel, attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), .font: UIFont.systemFont(ofSize: 30, weight: .medium)])
             
             self.titleLabel.attributedText = attributedTitle
             self.productSubtitleLabel.text = "Цена автомобиля указана в базовой комплектации"
             
             
-            self.titleLabel.numberOfLines = 2
             self.titleLabel.lineBreakMode = .byWordWrapping
-//            self.titleLabel.
             self.productTitleLabel.text = car.price + " ₽"
+            self.productTitleLabel.textColor = #colorLiteral(red: 0.9686265588, green: 0.9647503495, blue: 0.9645444751, alpha: 1)
             self.productTitleLabel.font = UIFont.systemFont(ofSize: 25)
         } else {
-            self.titleLabel.text = "Автомобиль не найдено"
+            let attributedTitle = NSMutableAttributedString(string: "Автомобиль не найден", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), .font: UIFont.systemFont(ofSize: 30, weight: .medium)])
+            attributedTitle.append(NSMutableAttributedString(string: "\nПопробуйте другое фото", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), .font: UIFont.systemFont(ofSize: 20, weight: .light)]))
+            self.titleLabel.attributedText = attributedTitle
+            self.productTitleLabel.isHidden = true
+            self.productSubtitleLabel.isHidden = true
+            self.productSubtitleLabel.isHidden = true
+            self.priceButton.isHidden = true
         }
+        self.titleLabel.numberOfLines = 2
         
         configureCollectionView()
         configurePriceButton()
@@ -90,10 +112,11 @@ class OffersViewController: UIViewController {
         gradientLayer.masksToBounds = true
         cell.layer.insertSublayer(gradientLayer, at: 0)
         
-        cell.layer.shadowColor = cellsShadowColor
+        cell.layer.shadowColor = CGColor(srgbRed: 255, green: 255, blue: 255, alpha: 255)
         cell.layer.shadowOpacity = 0.2
         cell.layer.shadowRadius = 20
         cell.layer.shadowOffset = CGSize(width: 0.0, height: 30)
+        cell.productImage.backgroundColor = .white
         
         if images.count != 0 {
             cell.productImage.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * collectionViewCellWidthCoefficient, height: self.view.frame.height * collectionViewCellHeightCoefficient)
@@ -125,7 +148,8 @@ class OffersViewController: UIViewController {
     }
     
     @IBAction func didPressPriceButton(_ sender: Any) {
-        
+        let formVC = InputsFormViewController()
+        navigationController?.pushViewController(formVC, animated: true)
     }
     
 }
@@ -147,8 +171,8 @@ var prevIndex = 0
 extension OffersViewController: UICollectionViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let locationFirst = CGPoint(x: collectionView.center.x + scrollView.contentOffset.x, y: collectionView.center.y + scrollView.contentOffset.y)
-        let locationSecond = CGPoint(x: collectionView.center.x + scrollView.contentOffset.x + 20, y: collectionView.center.y + scrollView.contentOffset.y)
-        let locationThird = CGPoint(x: collectionView.center.x + scrollView.contentOffset.x - 20, y: collectionView.center.y + scrollView.contentOffset.y)
+        let locationSecond = CGPoint(x: collectionView.center.x + scrollView.contentOffset.x + 10, y: collectionView.center.y + scrollView.contentOffset.y)
+        let locationThird = CGPoint(x: collectionView.center.x + scrollView.contentOffset.x - 10, y: collectionView.center.y + scrollView.contentOffset.y)
         
         if images.count != 0 {
             if let indexPathFirst = collectionView.indexPathForItem(at: locationFirst),
