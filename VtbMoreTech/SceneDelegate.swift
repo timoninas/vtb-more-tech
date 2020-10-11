@@ -10,6 +10,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         Marketplace.shared.upload()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
             
         // MARK:-TestVC
         let cameraVC = ModuleBuilder.createCameraModule()
@@ -30,17 +32,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             profileVC.tabBarItem = testBarItem
         }
         
-        let offersVC = ModuleBuilder.createOfferModule(carBrand: "Cadillac", carModel: "ESCALADE")
+        let offersVC = ModuleBuilder.createOfferModule(carBrand: "Cadillac", carModel: "ESCALADE", beautyCarBrand: "Cadillac", beautyCarModel: "ESCALADE")
+        let navBarOffers = UINavigationController(rootViewController: offersVC)
         
         // MARK:- Setup NavBar
         let tabBar = UITabBarController()
         tabBar.tabBar.tintColor = UIColor.appColor(.TabBarTintColor)
         tabBar.tabBar.barTintColor = UIColor.appColor(.TabBarBackgroundColor)
-        tabBar.setViewControllers([navBarCamera, offersVC], animated: true)
+        tabBar.setViewControllers([navBarCamera], animated: true)
         tabBar.selectedViewController = navBarCamera
         tabBar.tabBar.unselectedItemTintColor = UIColor.appColor(.White)
+        
+        let formVC = InputsFormViewController()
 
-        window.rootViewController = tabBar
+        window.rootViewController = UINavigationController(rootViewController: cameraVC)
 
         window.backgroundColor = .white
         self.window = window
