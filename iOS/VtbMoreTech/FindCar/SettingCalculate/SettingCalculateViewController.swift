@@ -50,9 +50,9 @@ class SettingCalculateViewController: UIViewController {
     }
     
     func setupSliders() {
-        initialFeeSlider.value = Float(100000)
-        kaskoValueSlider.value = Float(1000)
-        residualPaymentSlider.value = Float(10)
+        initialFeeSlider.value = Float(500000.0)
+        kaskoValueSlider.value = Float(20000.0)
+        residualPaymentSlider.value = Float(90.0)
         termSlider.value = Float(3)
     }
     
@@ -62,7 +62,7 @@ class SettingCalculateViewController: UIViewController {
     
     
     @IBAction func kaskoValueSliderind(_ sender: UISlider) {
-        kaskoValueLabel.text = "Первоначальный взнос: \(sender.value) РУБ."
+        kaskoValueLabel.text = "Сумма каско: \(sender.value) РУБ."
     }
     
     @IBAction func residualPaymentSliderind(_ sender: UISlider) {
