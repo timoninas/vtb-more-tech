@@ -1,0 +1,32 @@
+PODS:
+  - AXRatingView (1.0.3)
+  - GravitySliderFlowLayout (1.0)
+  - JVFloatLabeledTextField (1.0.2)
+  - ViewAnimator (3.0.1)
+  - XLForm (4.1.0)
+
+DEPENDENCIES:
+  - AXRatingView (= 1.0.3)
+  - GravitySliderFlowLayout
+  - JVFloatLabeledTextField (= 1.0.2)
+  - ViewAnimator
+  - XLForm
+
+SPEC REPOS:
+  trunk:
+    - AXRatingView
+    - GravitySliderFlowLayout
+    - JVFloatLabeledTextField
+    - ViewAnimator
+    - XLForm
+
+SPEC CHECKSUMS:
+  AXRatingView: ccaadc1bbda99a4b7e1d556059482d2b933a9f4e
+  GravitySliderFlowLayout: bb9ae6a302b85821c9e0271c00533fae8091143b
+  JVFloatLabeledTextField: 58a3a32cfb800e5b224f676987e7c13abf50a14d
+  ViewAnimator: dd18d2f5c1e472f78d0065ff92750fe56cbd2f39
+  XLForm: 7ee02761be8a369d1ad1bbffe738b97083d94f3e
+
+PODFILE CHECKSUM: ad4598810296753358acc737ca693bba9a0bd4ad
+
+COCOAPODS: 1.8.4
