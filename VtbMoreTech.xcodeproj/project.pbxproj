@@ -26,6 +26,8 @@
 		77BCB63525306D0200F8B1C1 /* SchemeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB63425306D0200F8B1C1 /* SchemeColor.swift */; };
 		77BCB6412530835C00F8B1C1 /* PreviewPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB63F2530835B00F8B1C1 /* PreviewPhotoController.swift */; };
 		77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */; };
+		77BCB6552530AB4E00F8B1C1 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */; };
+		77BCB6632531B0FA00F8B1C1 /* CarRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */; };
 		C410A6BB2531A1380092B62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410A6BA2531A1380092B62D /* Main.storyboard */; };
 		C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FD6E2531A93700F577F9 /* ProductCollectionViewCell.swift */; };
 		C437FDB42531BA0500F577F9 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FDB32531BA0500F577F9 /* CarModel.swift */; };
@@ -40,10 +42,9 @@
 		C4689F732530CD56009BB079 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F6D2530CD56009BB079 /* CollectionViewController.swift */; };
 		C4689F7525311C0A009BB079 /* Marketplace.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F7425311C0A009BB079 /* Marketplace.swift */; };
 		C4689F8B25313381009BB079 /* OffersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */; };
+		C4AEB59625328D8500CC5BF2 /* InputForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AEB59525328D8500CC5BF2 /* InputForm.swift */; };
 		C8CB392D218AA132994AFDB0 /* Pods_VtbMoreTech_VtbMoreTechUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0ED01E1972C00A1422E01C /* Pods_VtbMoreTech_VtbMoreTechUITests.framework */; };
 		DF5A3A784D4BA0DF94D9ECFC /* Pods_VtbMoreTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */; };
-		77BCB6552530AB4E00F8B1C1 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */; };
-		77BCB6632531B0FA00F8B1C1 /* CarRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		77BCB63425306D0200F8B1C1 /* SchemeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeColor.swift; sourceTree = "<group>"; };
 		77BCB63F2530835B00F8B1C1 /* PreviewPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPhotoController.swift; sourceTree = "<group>"; };
 		77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewPhotoController.xib; sourceTree = "<group>"; };
+		77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
+		77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRecognitionService.swift; sourceTree = "<group>"; };
 		82DAE5521E45A0DD1147594F /* Pods-VtbMoreTechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTechTests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTechTests/Pods-VtbMoreTechTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9178B31A4FFFC6BEC8A864 /* Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,10 +112,9 @@
 		C4689F6D2530CD56009BB079 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C4689F7425311C0A009BB079 /* Marketplace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marketplace.swift; sourceTree = "<group>"; };
 		C4689F8A25313381009BB079 /* OffersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCollectionViewController.swift; sourceTree = "<group>"; };
+		C4AEB59525328D8500CC5BF2 /* InputForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputForm.swift; sourceTree = "<group>"; };
 		E3BBEACD0D9A63C1A6597695 /* Pods-VtbMoreTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech/Pods-VtbMoreTech.debug.xcconfig"; sourceTree = "<group>"; };
 		F98C2290335088B243DF34EB /* Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.release.xcconfig"; sourceTree = "<group>"; };
-		77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
-		77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRecognitionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */,
 				77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */,
 				77BCB63425306D0200F8B1C1 /* SchemeColor.swift */,
+				C4AEB59425328C7300CC5BF2 /* Form */,
 				C437FDB22531B96E00F577F9 /* Additional */,
 				C4689F7625311E79009BB079 /* Marketplace */,
 				C4689F5E2530C1F2009BB079 /* Offers */,
@@ -340,6 +343,14 @@
 				C437FDB32531BA0500F577F9 /* CarModel.swift */,
 			);
 			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		C4AEB59425328C7300CC5BF2 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				C4AEB59525328D8500CC5BF2 /* InputForm.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +596,7 @@
 			files = (
 				C4689F712530CD56009BB079 /* ViewController.swift in Sources */,
 				C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */,
+				C4AEB59625328D8500CC5BF2 /* InputForm.swift in Sources */,
 				C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */,
 				C4689F702530CD56009BB079 /* Designable.swift in Sources */,
 				77287F082531D62D00D63F1C /* CalculateParametrs.swift in Sources */,

@@ -30,17 +30,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             profileVC.tabBarItem = testBarItem
         }
         
-        let offersVC = ModuleBuilder.createOfferModule(carBrand: "Cadillac", carModel: "ESCALADE")
+//        let offersVC = ModuleBuilder.createOfferModule(carBrand: "Cadillac", carModel: "ESCALADE")
         
         // MARK:- Setup NavBar
         let tabBar = UITabBarController()
         tabBar.tabBar.tintColor = UIColor.appColor(.TabBarTintColor)
         tabBar.tabBar.barTintColor = UIColor.appColor(.TabBarBackgroundColor)
-        tabBar.setViewControllers([navBarCamera, offersVC], animated: true)
+        tabBar.setViewControllers([navBarCamera], animated: true)
         tabBar.selectedViewController = navBarCamera
         tabBar.tabBar.unselectedItemTintColor = UIColor.appColor(.White)
+        
+        let formVC = InputForm()
 
-        window.rootViewController = tabBar
+        window.rootViewController = UINavigationController(rootViewController: formVc)
 
         window.backgroundColor = .white
         self.window = window
