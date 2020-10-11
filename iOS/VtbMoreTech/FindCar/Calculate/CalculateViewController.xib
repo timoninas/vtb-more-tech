@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalculateViewController" customModule="VtbMoreTech" customModuleProvider="target">
+            <connections>
+                <outlet property="contractRateLabel" destination="P0e-4n-RPt" id="Mdx-N3-Fvv"/>
+                <outlet property="formCreditButton" destination="cl8-bi-GRG" id="N1T-nF-Hca"/>
+                <outlet property="kaskoCostLabel" destination="jS4-Xa-kL2" id="fSc-5B-GDv"/>
+                <outlet property="lastPaymentLabel" destination="yDE-Yv-bJu" id="dKS-f0-Cdw"/>
+                <outlet property="loadAmountLabel" destination="D8O-tB-Fkc" id="WBH-xi-jPw"/>
+                <outlet property="paymentLabel" destination="uqD-vo-mcY" id="zMp-6a-NVh"/>
+                <outlet property="termLabel" destination="mxK-25-FTq" id="H5S-T5-izN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-WP-jjU">
+                    <rect key="frame" x="10" y="59" width="394" height="400"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Базовая процентная ставка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-4n-RPt">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма кредита" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8O-tB-Fkc">
+                            <rect key="frame" x="0.0" y="72.5" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqD-vo-mcY">
+                            <rect key="frame" x="0.0" y="145" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаточный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDE-Yv-bJu">
+                            <rect key="frame" x="0.0" y="217.5" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок кредита" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-25-FTq">
+                            <rect key="frame" x="0.0" y="290" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость каско" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-Xa-kL2">
+                            <rect key="frame" x="0.0" y="362.5" width="394" height="37.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="White"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="G8P-T5-4eo"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl8-bi-GRG">
+                    <rect key="frame" x="35.5" y="804" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="ByO-sK-Sy4"/>
+                        <constraint firstAttribute="width" constant="343" id="Qbx-Vb-ude"/>
+                    </constraints>
+                    <state key="normal" title="Оформить кредит"/>
+                    <connections>
+                        <action selector="formCreditTapped:" destination="-1" eventType="touchUpInside" id="MVp-Gx-0pE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="TabBarBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q2r-WP-jjU" secondAttribute="trailing" constant="10" id="Bli-H3-tnd"/>
+                <constraint firstItem="Q2r-WP-jjU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="Dwz-bJ-pUb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cl8-bi-GRG" secondAttribute="bottom" constant="10" id="Syr-HS-Jm7"/>
+                <constraint firstItem="cl8-bi-GRG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WYG-lr-s5g"/>
+                <constraint firstItem="Q2r-WP-jjU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="nGx-Ty-NZY"/>
+            </constraints>
+            <point key="canvasLocation" x="-338" y="64"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок кредита" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QsU-q2-Npv">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="37.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-714" y="-293"/>
+        </label>
+    </objects>
+    <resources>
+        <namedColor name="TabBarBackgroundColor">
+            <color red="0.043137254901960784" green="0.11372549019607843" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

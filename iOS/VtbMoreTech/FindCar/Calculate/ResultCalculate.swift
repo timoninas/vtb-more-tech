@@ -53,13 +53,25 @@ struct MaxMinFilled {
     var min: String? = ""
 }
 
-struct Result {
+struct ResultCalculate {
+    // Базовая процентная ставка
     var contractRate: String = "";
+    
+    // Стоимость каско
     var kaskoCost: Int = 0;
+    
+    // Остаточный платеж
     var lastPayment: String = "";
+    
+    // Сумма кредита
     var loanAmount: Int = 0;
+    
+    // Ежемесячный платеж
     var payment: Int = 0;
+    
     var residualPayment: String = "";
     var subsidy: String = "";
+    
+    // Срок кредита
     var term: Int = 0;
 }

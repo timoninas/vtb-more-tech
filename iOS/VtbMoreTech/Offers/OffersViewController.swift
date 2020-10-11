@@ -148,8 +148,16 @@ class OffersViewController: UIViewController {
     }
     
     @IBAction func didPressPriceButton(_ sender: Any) {
-        let formVC = InputsFormViewController()
-        navigationController?.pushViewController(formVC, animated: true)
+        guard let priceStr = car.price else { return }
+        guard let price = Int(priceStr) else { return }
+        CalculateService.shared.calculate(cost: price, initialFee: 1000000) { [weak self] (result) in
+            guard let self = self else { return }
+            guard let result = result else { return }
+            guard let car = self.car else { return }
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(ModuleBuilder.createCalculateModule(result: result, car: car), animated: true)
+            }
+        }
     }
     
 }

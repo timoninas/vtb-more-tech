@@ -26,7 +26,9 @@
 		77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */; };
 		77BCB6552530AB4E00F8B1C1 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */; };
 		77BCB6632531B0FA00F8B1C1 /* CarRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */; };
-		C410A6BB2531A1380092B62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C410A6BA2531A1380092B62D /* Main.storyboard */; };
+		77FF061D2532C4AB00EC7084 /* CalculateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF061C2532C4AB00EC7084 /* CalculateService.swift */; };
+		77FF06632532CBCD00EC7084 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FF06612532CBCD00EC7084 /* CalculateViewController.swift */; };
+		77FF06642532CBCD00EC7084 /* CalculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FF06622532CBCD00EC7084 /* CalculateViewController.xib */; };
 		C4243F3625322E40005FD4EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4243F3525322E40005FD4EE /* Main.storyboard */; };
 		C4243F3D253264E2005FD4EE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4243F3B253264E2005FD4EE /* CameraViewController.swift */; };
 		C4243F3E253264E2005FD4EE /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4243F3C253264E2005FD4EE /* CameraViewController.xib */; };
@@ -94,6 +96,9 @@
 		77BCB6402530835B00F8B1C1 /* PreviewPhotoController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewPhotoController.xib; sourceTree = "<group>"; };
 		77BCB6542530AB4E00F8B1C1 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
 		77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRecognitionService.swift; sourceTree = "<group>"; };
+		77FF061C2532C4AB00EC7084 /* CalculateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateService.swift; sourceTree = "<group>"; };
+		77FF06612532CBCD00EC7084 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		77FF06622532CBCD00EC7084 /* CalculateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculateViewController.xib; sourceTree = "<group>"; };
 		82DAE5521E45A0DD1147594F /* Pods-VtbMoreTechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTechTests.release.xcconfig"; path = "Target Support Files/Pods-VtbMoreTechTests/Pods-VtbMoreTechTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F163AC55A280EB5E97DE59A /* Pods_VtbMoreTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VtbMoreTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9178B31A4FFFC6BEC8A864 /* Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; path = "Target Support Files/Pods-VtbMoreTech-VtbMoreTechUITests/Pods-VtbMoreTech-VtbMoreTechUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,9 +203,6 @@
 				C4243F3525322E40005FD4EE /* Main.storyboard */,
 				77BCB5D225304D9200F8B1C1 /* LaunchScreen.storyboard */,
 				77BCB5D525304D9200F8B1C1 /* Info.plist */,
-				77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */,
-				77287F072531D62D00D63F1C /* CalculateParametrs.swift */,
-				77287F0C2531D66800D63F1C /* ResultCalculate.swift */,
 			);
 			path = VtbMoreTech;
 			sourceTree = "<group>";
@@ -272,10 +274,24 @@
 		77BCB64D25309EC800F8B1C1 /* FindCar */ = {
 			isa = PBXGroup;
 			children = (
+				77BCB6622531B0F900F8B1C1 /* CarRecognitionService.swift */,
 				77BCB60B25304F8E00F8B1C1 /* Camera */,
 				77BCB64625309EB600F8B1C1 /* PreviewPhoto */,
+				77FF062B2532C92F00EC7084 /* Calculate */,
 			);
 			path = FindCar;
+			sourceTree = "<group>";
+		};
+		77FF062B2532C92F00EC7084 /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				77FF06612532CBCD00EC7084 /* CalculateViewController.swift */,
+				77FF06622532CBCD00EC7084 /* CalculateViewController.xib */,
+				77FF061C2532C4AB00EC7084 /* CalculateService.swift */,
+				77287F072531D62D00D63F1C /* CalculateParametrs.swift */,
+				77287F0C2531D66800D63F1C /* ResultCalculate.swift */,
+			);
+			path = Calculate;
 			sourceTree = "<group>";
 		};
 		79B43587CDC4CDDBAA3CC65D /* Pods */ = {
@@ -465,6 +481,7 @@
 				77BCB5D425304D9200F8B1C1 /* LaunchScreen.storyboard in Resources */,
 				77BCB5D125304D9200F8B1C1 /* Assets.xcassets in Resources */,
 				77BCB60025304EB400F8B1C1 /* ProfileViewController.xib in Resources */,
+				77FF06642532CBCD00EC7084 /* CalculateViewController.xib in Resources */,
 				C4243F3E253264E2005FD4EE /* CameraViewController.xib in Resources */,
 				C4243F3625322E40005FD4EE /* Main.storyboard in Resources */,
 				77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */,
@@ -599,6 +616,7 @@
 				C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */,
 				C4AEB59625328D8500CC5BF2 /* InputForm.swift in Sources */,
 				C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */,
+				77FF061D2532C4AB00EC7084 /* CalculateService.swift in Sources */,
 				C4689F702530CD56009BB079 /* Designable.swift in Sources */,
 				77287F082531D62D00D63F1C /* CalculateParametrs.swift in Sources */,
 				77287F002531BAF200D63F1C /* Extension+UIImage.swift in Sources */,
@@ -617,6 +635,7 @@
 				77BCB61A25304FCC00F8B1C1 /* ModuleBuilder.swift in Sources */,
 				C4689F6F2530CD56009BB079 /* CollectionViewCell.swift in Sources */,
 				C4689F722530CD56009BB079 /* TableViewController.swift in Sources */,
+				77FF06632532CBCD00EC7084 /* CalculateViewController.swift in Sources */,
 				C4689F7525311C0A009BB079 /* Marketplace.swift in Sources */,
 				77BCB5CA25304D8F00F8B1C1 /* SceneDelegate.swift in Sources */,
 				C4689F6E2530CD56009BB079 /* TableViewCell.swift in Sources */,
