@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingCalculateViewController" customModule="VtbMoreTech" customModuleProvider="target">
+            <connections>
+                <outlet property="costLabel" destination="rGw-uz-Pet" id="6c5-1l-5ss"/>
+                <outlet property="countCreditButton" destination="iDz-vl-ogk" id="CQS-lD-XAm"/>
+                <outlet property="initialFeeLabel" destination="G8O-3t-GYZ" id="dXY-ce-dpf"/>
+                <outlet property="initialFeeSlider" destination="4QB-fS-Sra" id="qhD-7i-McH"/>
+                <outlet property="kaskoValueLabel" destination="XWt-0g-CyU" id="JBy-6z-Nqw"/>
+                <outlet property="kaskoValueSlider" destination="zlB-xz-ZX6" id="Lgm-Jj-dqV"/>
+                <outlet property="residualPaymentLabel" destination="Ud6-Ju-juR" id="Qca-B9-y9I"/>
+                <outlet property="residualPaymentSlider" destination="Swe-sr-Dqi" id="PpD-AP-9fe"/>
+                <outlet property="termLabel" destination="Rp7-ab-i0u" id="BDx-yZ-d8z"/>
+                <outlet property="termSlider" destination="KFu-8o-XsK" id="hNk-Vy-Q0H"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детальные настройки кредита" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-vv-3cx">
+                    <rect key="frame" x="20" y="64" width="374" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена автомобиля: 1000000 РУБ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGw-uz-Pet">
+                    <rect key="frame" x="20" y="118" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Первоначальный взнос: 1000000 РУБ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8O-3t-GYZ">
+                    <rect key="frame" x="20" y="168.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000000" minValue="100000" maxValue="2000000" translatesAutoresizingMaskIntoConstraints="NO" id="4QB-fS-Sra">
+                    <rect key="frame" x="18" y="194" width="378" height="31"/>
+                    <connections>
+                        <action selector="initialFeeSlidierind:" destination="-1" eventType="valueChanged" id="OUO-TO-Y1Y"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма каско: 89232 РУБ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWt-0g-CyU">
+                    <rect key="frame" x="20" y="254" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="89232" minValue="1000" maxValue="100000" translatesAutoresizingMaskIntoConstraints="NO" id="zlB-xz-ZX6">
+                    <rect key="frame" x="18" y="279.5" width="378" height="31"/>
+                    <connections>
+                        <action selector="kaskoValueSliderind:" destination="-1" eventType="valueChanged" id="DGz-St-J7e"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаточный платеж: 89 РУБ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud6-Ju-juR">
+                    <rect key="frame" x="20" y="339.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="89" minValue="10" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Swe-sr-Dqi">
+                    <rect key="frame" x="18" y="365" width="378" height="31"/>
+                    <connections>
+                        <action selector="residualPaymentSliderind:" destination="-1" eventType="valueChanged" id="ZZy-bB-AAe"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок кредита: 3 лет" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp7-ab-i0u">
+                    <rect key="frame" x="20" y="425" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="KFu-8o-XsK">
+                    <rect key="frame" x="18" y="450.5" width="378" height="31"/>
+                    <connections>
+                        <action selector="termSlideind:" destination="-1" eventType="valueChanged" id="2wD-oF-npE"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDz-vl-ogk">
+                    <rect key="frame" x="35.5" y="530.5" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="EIf-I0-Lk9"/>
+                        <constraint firstAttribute="width" constant="343" id="IUI-aZ-AsP"/>
+                    </constraints>
+                    <state key="normal" title="Рассчитать условия кредита"/>
+                    <connections>
+                        <action selector="countCreditButtonTapped:" destination="-1" eventType="touchUpInside" id="jpm-25-cKa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="TabBarBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G8O-3t-GYZ" secondAttribute="trailing" constant="20" id="1PV-KA-Tiw"/>
+                <constraint firstItem="4QB-fS-Sra" firstAttribute="top" secondItem="G8O-3t-GYZ" secondAttribute="bottom" constant="5" id="2WY-bb-8fy"/>
+                <constraint firstItem="XWt-0g-CyU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3Ck-Oz-BKz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Swe-sr-Dqi" secondAttribute="trailing" constant="20" id="6nD-7y-Qm7"/>
+                <constraint firstItem="iDz-vl-ogk" firstAttribute="top" secondItem="KFu-8o-XsK" secondAttribute="bottom" constant="50" id="89i-b7-HEn"/>
+                <constraint firstItem="4QB-fS-Sra" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Boh-iB-a7l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4QB-fS-Sra" secondAttribute="trailing" constant="20" id="F3N-s2-dQj"/>
+                <constraint firstItem="rGw-uz-Pet" firstAttribute="top" secondItem="KCT-vv-3cx" secondAttribute="bottom" constant="30" id="J6Y-Ka-X7p"/>
+                <constraint firstItem="zlB-xz-ZX6" firstAttribute="top" secondItem="XWt-0g-CyU" secondAttribute="bottom" constant="5" id="K2Y-Gc-3yE"/>
+                <constraint firstItem="KFu-8o-XsK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mgs-Ol-Dpz"/>
+                <constraint firstItem="KFu-8o-XsK" firstAttribute="top" secondItem="Rp7-ab-i0u" secondAttribute="bottom" constant="5" id="Nns-6g-zyd"/>
+                <constraint firstItem="KCT-vv-3cx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Qr5-nV-c8u"/>
+                <constraint firstItem="rGw-uz-Pet" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="S2n-4K-cLv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KFu-8o-XsK" secondAttribute="trailing" constant="20" id="Vuj-Jf-ZAJ"/>
+                <constraint firstItem="Ud6-Ju-juR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XcC-Vg-QgV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ud6-Ju-juR" secondAttribute="trailing" constant="20" id="Xcc-ZR-Dcp"/>
+                <constraint firstItem="Ud6-Ju-juR" firstAttribute="top" secondItem="zlB-xz-ZX6" secondAttribute="bottom" constant="30" id="YIR-FQ-1hQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rp7-ab-i0u" secondAttribute="trailing" constant="20" id="ZXP-TO-2AK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rGw-uz-Pet" secondAttribute="trailing" constant="20" id="c0y-tn-fvx"/>
+                <constraint firstItem="iDz-vl-ogk" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="c8G-1P-896"/>
+                <constraint firstItem="KCT-vv-3cx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="eLo-xa-5lh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XWt-0g-CyU" secondAttribute="trailing" constant="20" id="eyb-Fo-UrL"/>
+                <constraint firstItem="zlB-xz-ZX6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fBe-H6-A1R"/>
+                <constraint firstItem="Swe-sr-Dqi" firstAttribute="top" secondItem="Ud6-Ju-juR" secondAttribute="bottom" constant="5" id="gDc-rh-9zl"/>
+                <constraint firstItem="Rp7-ab-i0u" firstAttribute="top" secondItem="Swe-sr-Dqi" secondAttribute="bottom" constant="30" id="gmb-23-J6X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zlB-xz-ZX6" secondAttribute="trailing" constant="20" id="lOb-we-r0g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KCT-vv-3cx" secondAttribute="trailing" constant="20" id="lvK-A7-kGZ"/>
+                <constraint firstItem="Rp7-ab-i0u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="nAC-p1-jUl"/>
+                <constraint firstItem="G8O-3t-GYZ" firstAttribute="top" secondItem="rGw-uz-Pet" secondAttribute="bottom" constant="30" id="nks-5y-kyd"/>
+                <constraint firstItem="Swe-sr-Dqi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ori-Ph-hTv"/>
+                <constraint firstItem="G8O-3t-GYZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qK5-JQ-YWu"/>
+                <constraint firstItem="XWt-0g-CyU" firstAttribute="top" secondItem="4QB-fS-Sra" secondAttribute="bottom" constant="30" id="x2i-AZ-107"/>
+            </constraints>
+            <point key="canvasLocation" x="-197.10144927536234" y="61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TabBarBackgroundColor">
+            <color red="0.043137254901960784" green="0.11372549019607843" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CalculateServiceDescription {
-    func calculate(cost: Int, initialFee: Int, completion: ((ResultCalculate?) -> Void)?)
+    func calculate(calculate: CalculateParametrs, completion: ((ResultCalculate?) -> Void)?)
 }
 
 final class CalculateService: CalculateServiceDescription {
@@ -17,14 +17,14 @@ final class CalculateService: CalculateServiceDescription {
     
     private init() {}
     
-    func calculate(cost: Int, initialFee: Int, completion: ((ResultCalculate?) -> Void)?) {
+    func calculate(calculate: CalculateParametrs, completion: ((ResultCalculate?) -> Void)?) {
         let headers = [
             "x-ibm-client-id": "1039399f119d8f9152f0a67dabe4fc6a",
             "content-type": "application/json",
             "accept": "application/json"
         ]
         
-        let calculateParametrs = CalculateParametrs(cost: cost, initialFee: initialFee)
+        let calculateParametrs = calculate
         let parameters = calculateParametrs.getParametrs() as [String : Any]
         
         var postData = Data()

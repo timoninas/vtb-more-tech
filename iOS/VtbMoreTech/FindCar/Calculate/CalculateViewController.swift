@@ -15,7 +15,6 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var contractRateLabel: UILabel!
     @IBOutlet weak var loadAmountLabel: UILabel!
     @IBOutlet weak var paymentLabel: UILabel!
-    @IBOutlet weak var lastPaymentLabel: UILabel!
     @IBOutlet weak var termLabel: UILabel!
     @IBOutlet weak var kaskoCostLabel: UILabel!
     
@@ -38,7 +37,6 @@ class CalculateViewController: UIViewController {
         contractRateLabel.text = "Базовая процентная ставка \(result.contractRate)%"
         loadAmountLabel.text = "Сумма кредита: \(result.loanAmount) РУБ."
         paymentLabel.text = "Ежемесячный платеж: \(result.payment) РУБ."
-        lastPaymentLabel.text = "Остаточный платеж: \(result.lastPayment) РУБ."
         termLabel.text = "Срок кредита: \(result.term) лет"
         kaskoCostLabel.text = "Стоимость каско: \(result.kaskoCost) РУБ."
     }

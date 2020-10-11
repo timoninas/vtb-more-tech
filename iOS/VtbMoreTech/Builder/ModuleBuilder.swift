@@ -7,6 +7,7 @@ protocol ProtocolBuilder {
     static func createOfferModule(carBrand: String, carModel: String, beautyCarBrand: String, beautyCarModel: String) -> UIViewController
     static func createCalculateModule(result: ResultCalculate, car: CarModel) -> UIViewController
     static func createInputFormModule(result: ResultCalculate, car: CarModel) -> UIViewController
+    static func createSettingCalculateModule(car: CarModel) -> UIViewController
 }
 
 enum typeOfPhoto {
@@ -55,6 +56,12 @@ class ModuleBuilder: ProtocolBuilder {
     static func createInputFormModule(result: ResultCalculate, car: CarModel) -> UIViewController {
         let view = InputsFormViewController()
         view.result = result
+        view.car = car
+        return view
+    }
+    
+    static func createSettingCalculateModule(car: CarModel) -> UIViewController {
+        let view = SettingCalculateViewController()
         view.car = car
         return view
     }

@@ -11,6 +11,8 @@
 		77287F002531BAF200D63F1C /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287EFF2531BAF200D63F1C /* Extension+UIImage.swift */; };
 		77287F082531D62D00D63F1C /* CalculateParametrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287F072531D62D00D63F1C /* CalculateParametrs.swift */; };
 		77287F0D2531D66800D63F1C /* ResultCalculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77287F0C2531D66800D63F1C /* ResultCalculate.swift */; };
+		775DEEF22532FFE10013E0D2 /* SettingCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775DEEF02532FFE10013E0D2 /* SettingCalculateViewController.swift */; };
+		775DEEF32532FFE10013E0D2 /* SettingCalculateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775DEEF12532FFE10013E0D2 /* SettingCalculateViewController.xib */; };
 		77BCB5C825304D8F00F8B1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */; };
 		77BCB5CA25304D8F00F8B1C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */; };
 		77BCB5D125304D9200F8B1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77BCB5D025304D9200F8B1C1 /* Assets.xcassets */; };
@@ -75,6 +77,8 @@
 		77287EFF2531BAF200D63F1C /* Extension+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
 		77287F072531D62D00D63F1C /* CalculateParametrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateParametrs.swift; sourceTree = "<group>"; };
 		77287F0C2531D66800D63F1C /* ResultCalculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCalculate.swift; sourceTree = "<group>"; };
+		775DEEF02532FFE10013E0D2 /* SettingCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCalculateViewController.swift; sourceTree = "<group>"; };
+		775DEEF12532FFE10013E0D2 /* SettingCalculateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCalculateViewController.xib; sourceTree = "<group>"; };
 		77BCB5C425304D8F00F8B1C1 /* VtbMoreTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VtbMoreTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BCB5C725304D8F00F8B1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77BCB5C925304D8F00F8B1C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +163,15 @@
 				6BDDEE7ADD921F7BA6A99A45 /* Pods_VtbMoreTechTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		775DEEF72532FFE60013E0D2 /* SettingCalculate */ = {
+			isa = PBXGroup;
+			children = (
+				775DEEF02532FFE10013E0D2 /* SettingCalculateViewController.swift */,
+				775DEEF12532FFE10013E0D2 /* SettingCalculateViewController.xib */,
+			);
+			path = SettingCalculate;
 			sourceTree = "<group>";
 		};
 		77BCB5BB25304D8F00F8B1C1 = {
@@ -278,6 +291,7 @@
 				77BCB60B25304F8E00F8B1C1 /* Camera */,
 				77BCB64625309EB600F8B1C1 /* PreviewPhoto */,
 				77FF062B2532C92F00EC7084 /* Calculate */,
+				775DEEF72532FFE60013E0D2 /* SettingCalculate */,
 			);
 			path = FindCar;
 			sourceTree = "<group>";
@@ -484,6 +498,7 @@
 				77FF06642532CBCD00EC7084 /* CalculateViewController.xib in Resources */,
 				C4243F3E253264E2005FD4EE /* CameraViewController.xib in Resources */,
 				C4243F3625322E40005FD4EE /* Main.storyboard in Resources */,
+				775DEEF32532FFE10013E0D2 /* SettingCalculateViewController.xib in Resources */,
 				77BCB6422530835C00F8B1C1 /* PreviewPhotoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +630,7 @@
 				C4689F712530CD56009BB079 /* ViewController.swift in Sources */,
 				C4689F642530C2DA009BB079 /* Extensions+UIView.swift in Sources */,
 				C4AEB59625328D8500CC5BF2 /* InputForm.swift in Sources */,
+				775DEEF22532FFE10013E0D2 /* SettingCalculateViewController.swift in Sources */,
 				C437FD6F2531A93700F577F9 /* ProductCollectionViewCell.swift in Sources */,
 				77FF061D2532C4AB00EC7084 /* CalculateService.swift in Sources */,
 				C4689F702530CD56009BB079 /* Designable.swift in Sources */,

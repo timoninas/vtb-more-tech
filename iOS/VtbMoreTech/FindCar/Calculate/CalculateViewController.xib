@@ -14,7 +14,6 @@
                 <outlet property="contractRateLabel" destination="P0e-4n-RPt" id="Mdx-N3-Fvv"/>
                 <outlet property="formCreditButton" destination="cl8-bi-GRG" id="N1T-nF-Hca"/>
                 <outlet property="kaskoCostLabel" destination="jS4-Xa-kL2" id="fSc-5B-GDv"/>
-                <outlet property="lastPaymentLabel" destination="yDE-Yv-bJu" id="dKS-f0-Cdw"/>
                 <outlet property="loadAmountLabel" destination="D8O-tB-Fkc" id="WBH-xi-jPw"/>
                 <outlet property="paymentLabel" destination="uqD-vo-mcY" id="zMp-6a-NVh"/>
                 <outlet property="termLabel" destination="mxK-25-FTq" id="H5S-T5-izN"/>
@@ -26,41 +25,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-WP-jjU">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-WP-jjU">
                     <rect key="frame" x="10" y="59" width="394" height="400"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Базовая процентная ставка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0e-4n-RPt">
-                            <rect key="frame" x="0.0" y="0.0" width="394" height="37.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма кредита" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8O-tB-Fkc">
-                            <rect key="frame" x="0.0" y="72.5" width="394" height="37.5"/>
+                            <rect key="frame" x="0.0" y="82" width="394" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqD-vo-mcY">
-                            <rect key="frame" x="0.0" y="145" width="394" height="37.5"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                            <color key="textColor" name="White"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаточный платеж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDE-Yv-bJu">
-                            <rect key="frame" x="0.0" y="217.5" width="394" height="37.5"/>
+                            <rect key="frame" x="0.0" y="164" width="394" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок кредита" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxK-25-FTq">
-                            <rect key="frame" x="0.0" y="290" width="394" height="37.5"/>
+                            <rect key="frame" x="0.0" y="246" width="394" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стоимость каско" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-Xa-kL2">
-                            <rect key="frame" x="0.0" y="362.5" width="394" height="37.5"/>
+                            <rect key="frame" x="0.0" y="328" width="394" height="72"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
